@@ -36,7 +36,8 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 //    @Value("${config.oauth2.accessTokenUri}")
 //    String oAuthServerUri;
 
-    String accessTokenUri = "http://localhost:8080/oauth/token";
+//    String accessTokenUri = "http://localhost:8080/oauth/token";
+    String accessTokenUri = "https://api-centralerros.herokuapp.com/oauth/token";
 
     @Bean
     public Docket api() {

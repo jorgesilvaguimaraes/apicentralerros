@@ -17,6 +17,9 @@ import java.util.Map;
 @EnableJpaAuditing
 public class ApicentralerrosApplication {
 
+	private String url = "https://api-centralerros.herokuapp.com/swagger-ui.html";
+//	private String url = "http://localhost:8080/swagger-ui.html";
+
 	public static void main(String[] args) {
 		SpringApplication.run(ApicentralerrosApplication.class, args);
 	}
@@ -29,7 +32,7 @@ public class ApicentralerrosApplication {
 		@GetMapping(value = "/")
 		public RedirectView swagger() {
 			RedirectView redirectView = new RedirectView();
-			redirectView.setUrl("https://api-centralerros.herokuapp.com/swagger-ui.html");
+			redirectView.setUrl(url);
 			return redirectView;
 		}
 

@@ -33,8 +33,18 @@ Para fins de demonstração de funcionamento, foi feito o deploy da aplicação 
 - https://api-centralerros.herokuapp.com/event  (metodo GET, retorna todos event )
 - https://api-centralerros.herokuapp.com/event/{id}   (metodo GET, retorna um event com seus logs)
 
-Obs: Use o swagger para testar aplicação, segue os dados de username=jorge@gmail.com, password=123456, client_id=codenation and client_secret=codenation123 para autorizar a requisição.
+Obs: Use a aplicação através do swagger no endereço https://api-centralerros.herokuapp.com para testar aplicação, segue os dados de **username**=jorge@gmail.com, **password**=123456, **client_id**=codenation and **client_secret**=codenation123 para autorizar a requisição.
 
+####Exemplo:
+
+##### Autorização
+![alt text]( src/img-readme/swagger-aut.png "Logo Title Text 1")
+
+##### Form
+![alt text]( src/img-readme/swagger-cred.png "Logo Title Text 1")
+
+##### Resources
+![alt text]( src/img-readme/swagger-rosources.png "Logo Title Text 1")
 
 
 

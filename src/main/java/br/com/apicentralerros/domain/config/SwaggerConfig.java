@@ -45,6 +45,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
                 .paths(PathSelectors.any())
                 .apis(RequestHandlerSelectors.basePackage("br.com.apicentralerros"))
                 .build()
+                .apiInfo(metaData())
                 .securitySchemes(Arrays.asList(securitySchema() ))
                 .securityContexts(Arrays.asList(securityContext()));
 
@@ -102,11 +103,13 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 
     private ApiInfo metaData() {
         return new ApiInfoBuilder()
-                .title("Central de Erros REST API ")
+                .title("API REST Central de Erros")
                 .description("\"API REST Central de Erros\"")
                 .version("1.0.0")
                 .license("Apache License Version 2.0")
-                .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0\"")
+                .licenseUrl("https://www.apache.org/")
+                .contact(new Contact("Jorge Guimarães", "https://www.linkedin.com/in/jorge-guimaraes-fullstack/",
+                        "jorginhoad@@gmail.com"))
                 .build();
     }
 

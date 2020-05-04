@@ -23,8 +23,6 @@ public class EventLogInputModel {
     @NotBlank
     private String origin;
 
-    @NotNull
-    private Integer countEvent;
 
     @Valid
     @NotNull
@@ -65,15 +63,7 @@ public class EventLogInputModel {
     public void setOrigin(String origin) {
         this.origin = origin;
     }
-
-    public Integer getCountEvent() {
-        return countEvent;
-    }
-
-    public void setCountEvent(Integer countEvent) {
-        this.countEvent = countEvent;
-    }
-
+    
     public List<LogInputModel> getLogs() {
         return logs;
     }

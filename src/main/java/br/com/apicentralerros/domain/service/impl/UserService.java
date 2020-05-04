@@ -27,4 +27,9 @@ public class UserService implements UserServiceInterface, UserDetailsService {
 	public List<User> findAll() {
         return this.userRepository.findAll();
     }
+
+    @Override
+    public User store(User user) {
+        return userRepository.save(user);
+    }
 }

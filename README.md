@@ -15,6 +15,40 @@ decisões mais acertadas. Neste projeto vamos implementar uma API Rest para cent
 - [Swagger](https://swagger.io/) ```2.9.2```
 
 
+
+## Instalação
+A aplicação foi configurada pra ser executada com o Maven, portanto será necessário a instalação dessa ferramenta.
+
+> Instalando o Maven: [https://maven.apache.org/install.html](https://maven.apache.org/install.html).
+
+### Clonando o repositório:
+
+```bash
+$ git clone https://github.com/jorgesilvaguimaraes/apicentralerros.git
+```
+
+### Compilando e empacotando a aplicação
+
+```bash
+$ cd apicentralerros
+$ mvn compile
+$ mvn package
+```
+
+### Testando a aplicação
+
+```bash
+$ cd apicentralerros
+$ mvn test
+```
+
+### Executando a aplicação
+
+```bash
+$ cd apicentralerros
+$ mvn spring-boot:run
+```
+
 ## Documentação
 https://api-centralerros.herokuapp.com
 

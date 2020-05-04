@@ -20,12 +20,14 @@ import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Collection;
 
-@Entity
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @EntityListeners(AuditingEntityListener.class)
 @EqualsAndHashCode(of = "id")
+@Entity
+@Table(name = "users")
 public class User implements UserDetails {
 
     @Column

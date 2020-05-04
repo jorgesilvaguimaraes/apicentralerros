@@ -44,6 +44,7 @@ public class EventService implements EventInterface {
     @Override
     public Event store(Event event) {
         event.setDate(LocalDateTime.now());
+        event.setCountEvent(event.getLogs().size());
         return  this.eventRepository.save(event);
     }
 

@@ -41,10 +41,11 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.br.centraerros"))
+                .apis(RequestHandlerSelectors.basePackage("br.com.apicentralerros"))
                 .build()
                 .securitySchemes(Arrays.asList(new ApiKey("Token Access", HttpHeaders.AUTHORIZATION, In.HEADER.name())))
                 .securityContexts(Arrays.asList(securityContext()));
+
     }
 
 
